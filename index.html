@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISHAL KACHARIA</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000000, #111111);
+      color: white;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin: 60px 0;
+      background: linear-gradient(90deg, #00d9ff, #ff006e, #ffbe0b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+    @keyframes glow {
+      0% { text-shadow: 0 0 15px #00d9ff; }
+      100% { text-shadow: 0 0 30px #ff006e; }
+    }
+    p {
+      text-align: center;
+      color: #aaa;
+      font-size: 1.2em;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 25px;
+      width: 270px;
+      text-align: center;
+      transition: 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+    }
+    .card h2 {
+      color: #00d9ff;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      border-radius: 30px;
+      border: 2px solid #00d9ff;
+      color: #00d9ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00d9ff;
+      color: #000;
+      box-shadow: 0 0 15px #00d9ff;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #999;
+      background: rgba(255, 255, 255, 0.05);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>VISHAL KACHARIA</h1>
+  <p>Businessman | Gamer | Tech Enthusiast</p>
+
+  <section class="cards">
+    <div class="card">
+      <h2>Instagram</h2>
+      <p>@itz.___vishal__.kd</p>
+      <a href="https://www.instagram.com/itz.___vishal__.kd/" class="btn">Visit</a>
+    </div>
+    <div class="card">
+      <h2>Telegram</h2>
+      <p>@Vishalkd82</p>
+      <a href="https://t.me/Vishalkd82" class="btn">Chat</a>
+    </div>
+    <div class="card">
+      <h2>GitHub</h2>
+      <p>@vishalkacharia</p>
+      <a href="https://github.com/vishalkacharia/vishal-kacharia" class="btn">View</a>
+    </div>
+    <div class="card">
+      <h2>BGMI ID</h2>
+      <p>55580420434</p>
+      <a href="https://www.pubgmobile.com/" class="btn">Stats</a>
+    </div>
+  </section>
+
+  <footer>© 2025 VISHAL KACHARIA | Designed with ❤️</footer>
+</body>
+</html>

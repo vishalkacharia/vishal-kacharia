@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISHAL KACHARIA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top right, #0f0f0f, #000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(120deg, #00d9ff, #ff00c8, #ffbe0b);
+      background-size: 400% 400%;
+      animation: gradientShift 6s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 0 0 25px rgba(255,255,255,0.1);
+    }
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    p.subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 25px;
+      width: 270px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,217,255,0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 180deg, #00d9ff, #ff009d, #ffd60a, #00d9ff);
+      animation: spin 6s linear infinite;
+      z-index: 0;
+      opacity: 0.3;
+    }
+    @keyframes spin {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+    .card-content {
+      position: relative;
+      z-index: 1;
+    }
+    .card h2 {
+      color: #00d9ff;
+      margin-bottom: 10px;
+      text-shadow: 0 0 15px rgba(0,217,255,0.4);
+    }
+    .card p {
+      color: #ccc;
+      margin-bottom: 20px;
+      word-break: break-all;
+    }
+    .btn {
+      text-decoration: none;
+      color: #00d9ff;
+      border: 2px solid #00d9ff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #00d9ff;
+      color: #000;
+      box-shadow: 0 0 20px #00d9ff;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      background: linear-gradient(to top, rgba(255,255,255,0.05), transparent);
+    }
+  </style>
+</head>
+<body>
+  <header>VISHAL KACHARIA</header>
+  <p class="subtitle">Businessman | Gamer | Tech Enthusiast</p>
+
+  <section class="cards">
+    <div class="card">
+      <div class="card-content">
+        <h2>Instagram</h2>
+        <p>@itz.___vishal__.kd</p>
+        <a href="https://www.instagram.com/itz.___vishal__.kd/" target="_blank" class="btn">Visit</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2>Telegram</h2>
+        <p>@Vishalkd82</p>
+        <a href="https://t.me/Vishalkd82" target="_blank" class="btn">Chat</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2>GitHub</h2>
+        <p>@vishalkacharia</p>
+        <a href="https://github.com/vishalkacharia/vishal-kacharia" target="_blank" class="btn">View</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2>BGMI ID</h2>
+        <p>55580420434</p>
+        <a href="https://www.pubgmobile.com/" target="_blank" class="btn">Stats</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 VISHAL KACHARIA | Designed with ❤️</footer>
+</body>
+</html>
